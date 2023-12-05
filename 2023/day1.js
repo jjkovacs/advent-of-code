@@ -1,10 +1,10 @@
 var DAY = 1,
-    year = 2023;
+    YEAR = 2023;
 
 (function getInput(day) {
   var xhr = new XMLHttpRequest();
 
-  xhr.open('GET', 'https://adventofcode.com/' + year + '/day/' + day + '/input');
+  xhr.open('GET', 'https://adventofcode.com/' + YEAR + '/day/' + DAY + '/input');
   xhr.onload = function(){ 
     var input = xhr.response.split('\n');
     solve(input);
